@@ -91,32 +91,29 @@ namespace BankApi.Application.Services
             };
         }
 
-        // DENTRO DE TransaccionService.cs
         public async Task AplicarInteresesAsync(string numeroCuenta, decimal tasa)
         {
-            // 1. Buscamos la CUENTA (porque ahí está el saldo)
+      
             var cuenta =
                 await _cuentaRepo.ObtenerPorNumeroAsync(numeroCuenta)
                 ?? throw new KeyNotFoundException();
 
-            // 2. Calculamos el monto (Lógica de negocio)
+
             decimal montoInteres = cuenta.Saldo * tasa;
 
-            // 3. Afectamos la CUENTA
+
             cuenta.Saldo += montoInteres;
 
-            // 4. Creamos la TRANSACCIÓN para el historial
+
             var transaccion = new Transaccion
             {
                 CuentaId = cuenta.Id,
                 Monto = montoInteres,
-                Tipo = TipoTransaccion.Deposito, // El interés suma, es un depósito
+                Tipo = TipoTransaccion.Deposito,
                 SaldoDespues = cuenta.Saldo,
                 Fecha = DateTime.UtcNow,
-                // Opcional: una nota que diga "Intereses mensuales"
             };
 
-            // 5. Persistencia
             await _transaccionRepo.RegistrarAsync(transaccion);
             await _cuentaRepo.GuardarCambiosAsync();
         }

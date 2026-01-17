@@ -144,3 +144,4 @@ C:\BankApi\bin\Debug\net8.0\Test\bin\Debug\net8.0\Test\bin\Debug\net8.0\Test.dep
 C:\BankApi\bin\Debug\net8.0\Test\bin\Debug\net8.0\Test\bin\Debug\net8.0\Test.runtimeconfig.json
 C:\BankApi\bin\Debug\net8.0\Test\bin\Debug\net8.0\Test\bin\Debug\net8.0\Test\obj\project.assets.json
 C:\BankApi\bin\Debug\net8.0\Test\bin\Debug\net8.0\Test\bin\Debug\net8.0\Test\obj\Test.csproj.nuget.dgspec.json
+C:\BankApi\obj\Debug\net8.0\BankApi.sourcelink.json
