@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 API Bancaria - Examen Final
 
 Esta es una API desarrollada en **.NET 8** que permite la gestión de clientes, cuentas y transacciones bancarias (Depósitos, Retiros e Intereses).
@@ -16,3 +17,7 @@ El proyecto incluye una suite de pruebas para validar la lógica de negocio (Sal
 Para ejecutar las pruebas:
 cd Test
 dotnet test
+=======
+# -BankApi
+sta es una API desarrollada en **.NET 8** que permite la gestión de clientes, cuentas y transacciones bancarias (Depósitos, Retiros e Intereses).
+>>>>>>> d5e4e4f28b52894c680e5c5e2082066d8abeec5f
