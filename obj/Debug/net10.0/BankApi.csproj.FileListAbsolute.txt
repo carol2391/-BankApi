@@ -1,0 +1,8 @@
+C:\BankApi\obj\Debug\net10.0\BankApi.csproj.AssemblyReference.cache
+C:\BankApi\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\BankApi\obj\Debug\net10.0\BankApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\BankApi\obj\Debug\net10.0\BankApi.AssemblyInfoInputs.cache
+C:\BankApi\obj\Debug\net10.0\BankApi.AssemblyInfo.cs
+C:\BankApi\obj\Debug\net10.0\BankApi.csproj.CoreCompileInputs.cache
+C:\BankApi\obj\Debug\net10.0\BankApi.MvcApplicationPartsAssemblyInfo.cs
+C:\BankApi\obj\Debug\net10.0\BankApi.MvcApplicationPartsAssemblyInfo.cache
