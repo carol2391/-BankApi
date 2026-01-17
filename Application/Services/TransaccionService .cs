@@ -93,17 +93,13 @@ namespace BankApi.Application.Services
 
         public async Task AplicarInteresesAsync(string numeroCuenta, decimal tasa)
         {
-      
             var cuenta =
                 await _cuentaRepo.ObtenerPorNumeroAsync(numeroCuenta)
                 ?? throw new KeyNotFoundException();
 
-
             decimal montoInteres = cuenta.Saldo * tasa;
 
-
             cuenta.Saldo += montoInteres;
-
 
             var transaccion = new Transaccion
             {
